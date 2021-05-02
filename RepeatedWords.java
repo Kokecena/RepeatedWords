@@ -48,7 +48,7 @@ public class RepeatedWords {
     }
 
     public static void main(String[] args) {
-        String text = "Yo soy Jovanni y no por nada me dicen Jovanni por que soy el mero mero de aqui y el mas perron de todo el sitio, deberas";
+        String text = "Yo soy Jovanni y soy el mas perron de de aqui, deberas";
         showWordCount(text);
     }
 }
