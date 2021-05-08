@@ -29,7 +29,8 @@ public class RepeatedWords {
         String[] words = str.split("\\s+");
         for (String word : words) {
             String normalizedWord = normalize(word);
-            if (!dicc.containsKey(normalizedWord)) {
+            boolean wordInDictionary = dicc.containsKey(normalizedWord);
+            if (!wordInDictionary) {
                 dicc.put(normalizedWord, new MutableInt());
             } else {
                 dicc.get(normalizedWord).increment();
